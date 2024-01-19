@@ -1,7 +1,6 @@
 import "./App.css";
 import { HeroSection } from "./components/HeroSection";
 export const App = () => {
-  console.log("weird");
   return (
     <main className="App">
       <HeroSection />
