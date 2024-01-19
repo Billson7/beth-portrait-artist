@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import { HeroSection } from "./components/HeroSection";
+export const App = () => {
+  console.log("weird");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <main className="App">
+      <HeroSection />
 
-export default App;
+      <section className="section next-section">
+        <img
+          className="next-image"
+          src="https://placedog.net/500"
+          alt="Profile Pic"
+        />
+        <h1 className="header-1"> Beth Miller</h1>
+        <p>Portrait Artist</p>
+        <p>Based in Leeds</p>
+      </section>
+    </main>
+  );
+};
